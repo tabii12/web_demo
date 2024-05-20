@@ -23,6 +23,7 @@
   justify-content: space-between;
   -moz-column-gap: 24px;
        column-gap: 24px;
+  list-style: none;
 }
 .header__navigation ul li a {
   text-decoration: none;
