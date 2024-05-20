@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .header{
     padding-top: 62px;
     padding-bottom: 24px;
@@ -18,6 +22,8 @@
             justify-content: space-between;
             column-gap: 24px;
             list-style: none;
+            
+
             li{
                 a{
                     text-decoration: none;
@@ -27,6 +33,19 @@
                     font-family: sr;
                     column-gap: 4px;
                     color: #000000;
+                }
+            }
+
+            .fix{
+                display: flex;
+                justify-content: flex-start;
+                position: relative;
+                width: 56.44px;
+
+                i{
+                    position: absolute;
+                    right: 0;
+                    bottom: -3px;
                 }
             }
         }
@@ -47,10 +66,10 @@
             input{
                 border: 1px solid #f0f0f0;
                 outline: none;
-                border-radius: 62px;
                 background-color: #f0f0f0;
                 font-family: sr;
                 font-size: 16px;
+                width: 500px;
             }
         }
     }
@@ -164,7 +183,14 @@
         }
         &__right{
             width: 1440px;
+            height: 663px;
             margin: 0 auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
         }
     }
 
@@ -286,7 +312,7 @@
     }
 
     .line-page{
-        width: 1440px;
+        width: 1240px;
         margin: 0 auto;
         padding: 0px 100px;
         padding-top: 62px;
@@ -531,6 +557,7 @@
     margin-top: 170px;
     background-color: #F0F0F0;
     box-sizing: border-box;
+    height: 500px;
 
     &__content{
         width: 1240px;
@@ -559,10 +586,12 @@
 
             .submit{
                 width: 349px;
+                height: 108px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                box-sizing: border-box;
 
                 &-fill{
                     width: 100%;
@@ -580,7 +609,7 @@
                         border: none;
                         font-family: sr;
                         font-size: 16px;
-                        color: rgb(0, 0, 0, 0.4);
+                        width: 280px;
                     }
                 }
 
